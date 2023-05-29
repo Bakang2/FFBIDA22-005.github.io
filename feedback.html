@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="Movies.css">
+  <style>
+    /* CSS styles for the form */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 40px auto; /* Adjust the margin to increase spacing */
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    textarea {
+      height: 120px;
+    }
+    
+    button[type="submit"] {
+      padding: 8px 12px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html" class="image-link">
+          <img src="Images/Warner Bros. Logo Vector.png" alt="">
+        </a>
+      </li>
+      <li><a href="Movies.html">Movies</a></li>
+      <li><a href="TV Shows.html">TV Shows</a></li>
+      <li><a href="Games & Apps.html">Games & Apps</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Collections</a>
+        <div class="dropdown-content">
+          <a href="Animation.html">Animation</a>
+          <a href="Horror.html">Horror</a>
+          <a href="SCI FI.html">SCI FI</a>
+        </div>
+      </li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li>
+        <form class="search-form" action="#">
+          <input type="text" placeholder="Search">
+          <button type="submit">Search</button>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</header>
+  <div class="container">
+    <h2>Feedback Form</h2>
+    <form action="thank_you.html" method="post">
+      <!-- Form fields -->
+      <div class="form-group">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Your phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Your phone">
+      </div>
+      <div class="form-group">
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="Movies.css">
+  <style>
+    .slider-frame {
+      overflow: hidden;
+      height: 100%; /* Use percentage for responsive height */
+      width: 100%; /* Use percentage for responsive width */
+      margin-top: 20px;
+    }
+
+    .slide-images {
+      width: 300%; /* Adjust the width to accommodate all images */
+      height: 100%; /* Use percentage for responsive height */
+      margin: 0 auto;
+      position: relative;
+      animation: slide_animation 17s infinite alternate; /* Simplify animation property */
+    }
+
+    .img-container {
+      height: 100%; /* Use percentage for responsive height */
+      width: 33.33%; /* Use percentage for responsive width (3 images) */
+      position: relative;
+      float: left;
+    }
+
+    /* Adjust the keyframes percentages for 3 images */
+    @keyframes slide_animation {
+      0% { left: 0; }
+      16.666% { left: 0; }
+      33.333% { left: -100%; }
+      50% { left: -100%; }
+      66.666% { left: -200%; }
+      83.333% { left: -200%; }
+      100% { left: -200%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="image-link">
+            <img src="Images/Warner Bros. Logo Vector.png" alt="">
+          </a>
+        </li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="TV Shows.html">TV Shows</a></li>
+        <li><a href="Games & Apps.html">Games & Apps</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Collections</a>
+          <div class="dropdown-content">
+            <a href="Animation.html">Animation</a>
+            <a href="Horror.html">Horror</a>
+            <a href="SCI FI.html">SCI FI</a>
+          </div>
+        </li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li>
+          <form class="search-form" action="#">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+          </form>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1 style="font-size: 48px; font-family: 'Arial', sans-serif; text-align: center; color: #033333; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">TOP PICKS!!</h1>
+
+  <div class="slider-frame">
+    <div class="slide-images">
+      <div class="img-container">
+        <img src="Images/Slides\image1.jpeg" alt="Slide 1" width="1450" height="500">
+        <div class="text-wrapper">
+          <h1>THE MATRIX RESURRECTIONS</h1>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="Images/Slides\image 2.jpeg" alt="Slide 2" width="1450" height="500">
+        <div class="text-wrapper">
+          <h1>THE BATMAN</h1>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="Images/Slides\image3.jpeg" alt="Slide 3" width="1450" height="500">
+        <div class="text-wrapper">
+          <h1>FANTASTIC BEASTS: THE SECRETS OF DUMBLEDORE</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: left;">
+    <h2 style="font-size: 30px; font-weight: bold;">HOT RIGHT NOW</h2>
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="margin: 10px;">
+      <img src="Images/Batman.jpeg" alt="The Batman" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">The Batman</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/Corsage.jpeg" alt="Corsage" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Corsage</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/matrix.jpg" alt="The Matrix Resurrections" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">The Matrix Resurrections</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/fantastic.jpg" alt="FANTASTIC BEASTS: THE SECRETS OF DUMBLEDORE" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Fantastic Beasts</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/Darna.jpg" alt="Darna" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Darna</div>
+    </div>
+  </div>
+
+  <div style="text-align: left;">
+    <h2 style="font-size: 30px; font-weight: bold;">MOVIE NIGHT FAVORITES</h2>
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="margin: 10px;">
+      <img src="Images/Acid man.jpeg" alt="Acid Man" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Acid man</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/Adam.jpeg" alt="Adam Project" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Adam Project</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/barbarian.jpg" alt="Barbarian" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Barbarian</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/Barbie.jpeg" alt="Barbie" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Barbie</div>
+    </div>
+    <div style="margin: 10px;">
+      <img src="Images/shazam.jpg" alt="Shazam" width="250" height="350">
+      <div style="text-align: center; font-weight: bold;">Shazam</div>
+    </div>
+  </div>
+
+  <footer style="background-color: black; padding: 10px; color: white; text-align: center;">
+    <p style="margin: 0;">
+      TM &copy; 2023 Warner Bros. Entertainment Inc. All rights reserved.
+    </p>
+    <div style="margin-top: 10px;">
+      <a href="#" style="color: white; margin-right: 10px;">Facebook</a>
+      <a href="#" style="color: white; margin-right: 10px;">Twitter</a>
+      <a href="#" style="color: white;">Instagram</a>
+    </div>
+  </footer>
+</body>
+
+</html>

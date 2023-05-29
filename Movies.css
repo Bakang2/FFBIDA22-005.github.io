@@ -1,0 +1,120 @@
+header {
+  background-color: #000000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertically center the navigation elements */
+}
+
+nav ul li {
+  flex: 1;
+}
+
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+.search-form {
+  display: flex; /* Display the search form elements horizontally */
+  align-items: center;
+}
+
+.search-form input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 8px 12px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px; /* Adjust the spacing between the input and button */
+}
+
+.image-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.image-link img {
+  width: 100px; /* Set the width of the image */
+  height: 50px; /* Set the height of the image */
+  border: none;
+}
+
+.content-wrapper {
+  width: 1500px;
+  height: 500px;
+  margin: 4% auto;
+  position: relative;
+}
+
+.content-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.text-wrapper h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* CSS styles */
+div img {
+  transition: opacity 0.3s ease;
+}
+
+div img:hover {
+  opacity: 0.7;
+}
